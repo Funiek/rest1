@@ -11,6 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="218f6ea6-61e9-4488-8cbf-cf6ef4176b2a" name="Changes" comment="zrobione zadanka z 1 ćwiczeń rest 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/MessageResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/MessageResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/service/MessageService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -64,7 +70,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="GlassFish 4.0.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.0.0" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="GlassFish" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.1.0" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/rest1-1.0-SNAPSHOT" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
@@ -149,6 +155,8 @@
       <workItem from="1683636856921" duration="1785000" />
       <workItem from="1684140158368" duration="83000" />
       <workItem from="1684140916235" duration="155000" />
+      <workItem from="1684231626829" duration="424000" />
+      <workItem from="1684232153398" duration="4020000" />
     </task>
     <task id="LOCAL-00001" summary="zrobione zadanka z 1 ćwiczeń rest">
       <created>1683638585245</created>
