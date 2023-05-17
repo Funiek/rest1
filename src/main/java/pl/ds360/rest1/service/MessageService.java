@@ -11,13 +11,15 @@ public class MessageService {
     private static Map<Long, Message> list = new HashMap<>();
 
     public MessageService() {
-        Message m1 = new Message(1L, "Pierwsza");
-        Message m2 = new Message(2L, "Druga");
-        Message m3 = new Message(3L, "Trzecia");
+        if(list.size() == 0) {
+            Message m1 = new Message(1L, "Pierwsza");
+            Message m2 = new Message(2L, "Druga");
+            Message m3 = new Message(3L, "Trzecia");
 
-        list.put(1L, m1);
-        list.put(2L, m2);
-        list.put(3L, m3);
+            list.put(1L, m1);
+            list.put(2L, m2);
+            list.put(3L, m3);
+        }
     }
 
     public List<Message> getAllMessages() {
@@ -34,7 +36,7 @@ public class MessageService {
     }
 
     public Message updateMessage(Message message) {
-        list.put(list.size() + 1L, message);
+        list.put(message.getId(), message);
 
         return message;
     }
@@ -48,7 +50,9 @@ public class MessageService {
 //        list.put(5L, m2);
 //        list.put(6L, m3);
 //        list.remove(5L);
-        list.remove(messageId);
-        list.remove(messageId);
+        Map<Long, Message> tempList = list;
+        tempList.remove(messageId);
+        list = tempList;
+
     }
 }

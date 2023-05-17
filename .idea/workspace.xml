@@ -12,7 +12,6 @@
     <list default="true" id="218f6ea6-61e9-4488-8cbf-cf6ef4176b2a" name="Changes" comment="zrobione zadanka z 1 ćwiczeń rest 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/MessageResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/MessageResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/service/MessageService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,9 +177,31 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="zrobione zadanka z 1 ćwiczeń rest" />
     <MESSAGE value="zrobione zadanka z 1 ćwiczeń rest 2" />
     <option name="LAST_COMMIT_MESSAGE" value="zrobione zadanka z 1 ćwiczeń rest 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/ds360/rest1/service/MessageService.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

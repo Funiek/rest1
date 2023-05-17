@@ -4,7 +4,10 @@ import pl.ds360.rest1.model.Message;
 import pl.ds360.rest1.service.MessageService;
 
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.UriInfo;
 import java.util.List;
 
 @Path("/messages")
@@ -45,6 +48,34 @@ public class MessageResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Message getQuery(@QueryParam("id") Long id) {
         return messageService.getMessage(id);
+    }
+
+    @GET
+    @Path("/header")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String getHeader(@HeaderParam("Kubus") String header) {
+        return header;
+    }
+
+    @GET
+    @Path("/matrix")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String getMatrix(@MatrixParam("name") String name, @MatrixParam("department") String department) {
+        return name + " " + department;
+    }
+
+    @GET
+    @Path("/info")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String getInfo(@Context UriInfo uriInfo) {
+        return uriInfo.getAbsolutePath().toString();
+    }
+
+    @GET
+    @Path("/httpheaders")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String getInfo(@Context HttpHeaders headers) {
+        return headers.getHeaderString("Connection");
     }
 
     @POST
