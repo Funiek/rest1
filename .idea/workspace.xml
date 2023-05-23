@@ -10,6 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="218f6ea6-61e9-4488-8cbf-cf6ef4176b2a" name="Changes" comment="zrobione zadanka z 1 ćwiczeń rest 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/ResponseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/SklepResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Products.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/MessageResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/MessageResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/service/MessageService.java" afterDir="false" />
@@ -28,6 +32,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -192,16 +197,5 @@
     <MESSAGE value="zrobione zadanka z 1 ćwiczeń rest" />
     <MESSAGE value="zrobione zadanka z 1 ćwiczeń rest 2" />
     <option name="LAST_COMMIT_MESSAGE" value="zrobione zadanka z 1 ćwiczeń rest 2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/ds360/rest1/service/MessageService.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

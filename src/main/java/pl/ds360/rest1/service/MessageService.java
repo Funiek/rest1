@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class MessageService {
     private static Map<Long, Message> list = new HashMap<>();
@@ -54,5 +55,11 @@ public class MessageService {
         tempList.remove(messageId);
         list = tempList;
 
+    }
+
+    public List<Message> getAllMessagesStartingWith(String par1) {
+        return list.values().stream()
+                .filter(e -> e.getMessage().startsWith(par1))
+                .collect(Collectors.toList());
     }
 }

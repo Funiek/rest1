@@ -99,4 +99,14 @@ public class MessageResource {
     public void delete(@PathParam("messageId") Long messageId) {
         messageService.deleteMessage(messageId);
     }
+
+    @GET
+    @Path("/search")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Message> getMessages(@QueryParam("zaczynasie") String par1 ) {
+        if (par1 != null){
+            return messageService.getAllMessagesStartingWith(par1);
+        }
+        return messageService.getAllMessages();
+    }
 }
