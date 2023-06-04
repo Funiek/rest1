@@ -4,14 +4,14 @@ import pl.ds360.rest1.model.Message;
 import pl.ds360.rest1.service.MessageService;
 
 import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.HttpHeaders;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.UriInfo;
+import javax.ws.rs.core.*;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.List;
 
-@Path("/messages")
+@Path("messages")
 public class MessageResource {
+
     MessageService messageService = new MessageService();
 
     @GET
@@ -39,8 +39,26 @@ public class MessageResource {
     @GET
     @Path("/{messageId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Message get(@PathParam("messageId") Long messageId) {
-        return messageService.getMessage(messageId);
+    public Message get(@PathParam("messageId") Long messageId, @Context UriInfo uriInfo) throws URISyntaxException {
+        Message newMessage = messageService.getMessage(messageId);
+
+        String uri = uriInfo.getBaseUriBuilder()
+                .path(MessageResource.class)
+                .path(String.valueOf(newMessage.getId()))
+                .build()
+                .toString();
+
+        newMessage.addLink(uri, "self");
+
+        String uri2 = uriInfo.getBaseUriBuilder()
+                .path(MessageResource.class)
+                .path("comments")
+                .build()
+                .toString();
+
+        newMessage.addLink(uri2, "comments");
+
+        return newMessage;
     }
 
     @GET
@@ -82,8 +100,14 @@ public class MessageResource {
     @Path("/")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Message create(Message message) {
-        return messageService.addMessage(message);
+    public Response create(Message message, @Context UriInfo uriInfo) {
+        Message newMessage = messageService.addMessage(message);
+        String newId = String.valueOf(newMessage.getId());
+        URI uri = uriInfo.getAbsolutePathBuilder().path(newId).build();
+
+        return Response.created(uri)
+                .entity(newMessage)
+                .build();
     }
 
     @PUT
@@ -108,5 +132,10 @@ public class MessageResource {
             return messageService.getAllMessagesStartingWith(par1);
         }
         return messageService.getAllMessages();
+    }
+
+    @Path("comments")
+    public CommentResource getCommentResource() {
+        return new CommentResource();
     }
 }

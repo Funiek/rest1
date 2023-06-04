@@ -9,13 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="218f6ea6-61e9-4488-8cbf-cf6ef4176b2a" name="Changes" comment="DZIALA REST 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/SearchParam.java" afterDir="false" />
+    <list default="true" id="218f6ea6-61e9-4488-8cbf-cf6ef4176b2a" name="Changes" comment="DZIALA REST 3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/CommentResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/MyLink.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/ResponseList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/ResponseList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/SklepResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/SklepResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/MessageResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/MessageResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Message.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +161,7 @@
       <workItem from="1684231626829" duration="424000" />
       <workItem from="1684232153398" duration="4020000" />
       <workItem from="1685874314140" duration="2123000" />
-      <workItem from="1685879247932" duration="7080000" />
+      <workItem from="1685879247932" duration="11685000" />
     </task>
     <task id="LOCAL-00001" summary="zrobione zadanka z 1 ćwiczeń rest">
       <created>1683638585245</created>
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683638637082</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DZIALA REST 3">
+      <created>1685892359136</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685892359136</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +204,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="zrobione zadanka z 1 ćwiczeń rest" />
     <MESSAGE value="zrobione zadanka z 1 ćwiczeń rest 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="zrobione zadanka z 1 ćwiczeń rest 2" />
+    <MESSAGE value="DZIALA REST 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="DZIALA REST 3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/ds360/rest1/MessageResource.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
