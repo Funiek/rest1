@@ -3,6 +3,9 @@ package pl.ds360.rest1;
 import pl.ds360.rest1.model.Message;
 import pl.ds360.rest1.service.MessageService;
 
+import javax.inject.Inject;
+import javax.inject.Singleton;
+import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;
 import java.net.URI;
@@ -12,7 +15,8 @@ import java.util.List;
 @Path("messages")
 public class MessageResource {
 
-    MessageService messageService = new MessageService();
+    @Inject
+    private MessageService messageService;
 
     @GET
     @Path("/xml")
@@ -100,7 +104,7 @@ public class MessageResource {
     @Path("/")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response create(Message message, @Context UriInfo uriInfo) {
+    public Response create(Message message, @Context UriInfo uriInfo, @Context HttpServletResponse response) {
         Message newMessage = messageService.addMessage(message);
         String newId = String.valueOf(newMessage.getId());
         URI uri = uriInfo.getAbsolutePathBuilder().path(newId).build();

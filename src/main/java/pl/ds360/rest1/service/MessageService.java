@@ -2,25 +2,29 @@ package pl.ds360.rest1.service;
 
 import pl.ds360.rest1.model.Message;
 
+import javax.annotation.PostConstruct;
+import javax.inject.Singleton;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+
+@Singleton
 public class MessageService {
-    private static Map<Long, Message> list = new HashMap<>();
+    private Map<Long, Message> list;
 
-    public MessageService() {
-        if(list.size() == 0) {
-            Message m1 = new Message(1L, "Pierwsza");
-            Message m2 = new Message(2L, "Druga");
-            Message m3 = new Message(3L, "Trzecia");
+    @PostConstruct
+    private void init() {
+        Message m1 = new Message(1L, "Pierwsza");
+        Message m2 = new Message(2L, "Druga");
+        Message m3 = new Message(3L, "Trzecia");
 
-            list.put(1L, m1);
-            list.put(2L, m2);
-            list.put(3L, m3);
-        }
+        list = new HashMap<>();
+        list.put(1L, m1);
+        list.put(2L, m2);
+        list.put(3L, m3);
     }
 
     public List<Message> getAllMessages() {
@@ -43,14 +47,6 @@ public class MessageService {
     }
 
     public void deleteMessage(Long messageId) {
-//        Message m1 = new Message(messageId, "Pierwsza");
-//        Message m2 = new Message(messageId, "Druga");
-//        Message m3 = new Message(messageId, "Trzecia");
-//
-//        list.put(4L, m1);
-//        list.put(5L, m2);
-//        list.put(6L, m3);
-//        list.remove(5L);
         Map<Long, Message> tempList = list;
         tempList.remove(messageId);
         list = tempList;
