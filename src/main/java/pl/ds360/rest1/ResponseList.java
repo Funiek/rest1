@@ -11,9 +11,10 @@ import java.util.List;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.NONE)
-public class ResponseList {
+public class ResponseList implements Serializable {
 
-    @XmlElement(name = "produkty")
+    private static final long serialVersionUID = 2L;
+    @XmlElement(name = "product")
     private List<Product> list;
 
     public List<Product> getList() {
@@ -23,4 +24,13 @@ public class ResponseList {
     public void setList(List<Product> list) {
         this.list = list;
     }
+    public ResponseList() {
+        super();
+    }
+    public ResponseList(List<Product> list) {
+        super();
+        this.list = list;
+    }
+
+
 }

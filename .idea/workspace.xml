@@ -9,14 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="218f6ea6-61e9-4488-8cbf-cf6ef4176b2a" name="Changes" comment="zrobione zadanka z 1 ćwiczeń rest 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/ResponseList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/SklepResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Products.java" afterDir="false" />
+    <list default="true" id="218f6ea6-61e9-4488-8cbf-cf6ef4176b2a" name="Changes" comment="DZIALA REST 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/SearchParam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/MessageResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/MessageResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/ResponseList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/ResponseList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/SklepResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/SklepResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/ds360/rest1/model/Products.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +160,8 @@
       <workItem from="1684140916235" duration="155000" />
       <workItem from="1684231626829" duration="424000" />
       <workItem from="1684232153398" duration="4020000" />
+      <workItem from="1685874314140" duration="2123000" />
+      <workItem from="1685879247932" duration="7080000" />
     </task>
     <task id="LOCAL-00001" summary="zrobione zadanka z 1 ćwiczeń rest">
       <created>1683638585245</created>
